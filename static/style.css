@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: monospace, 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 20% 5% 7% 2% 5% 40% 1fr 10%;
+    grid-template-areas: "head" "." "char" "." "btn" "quote" "." "footer";
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+
+#heading {
+    grid-area: head;
+    font-size: 1.5rem;
+}
+
+h2 {
+    grid-area: char;
+}
+
+button {
+    grid-area: btn;
+    height: 100%;
+    width: 20%;
+    background-color: #008CBA;
+    color: white;
+    font-family: monospace, 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 20px;
+}
+
+#quote {
+    grid-area: quote;
+    padding: 0 10%;
+}
+
+footer {
+    grid-area: footer;
+}

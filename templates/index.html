@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Office - Dunder Mifflin</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div id="heading">
+        <h1>The Office</h1>
+        <p>Dunder Mifflinity</p>
+    </div>
+
+    <h2>What would Michael Scott tell me?</h2>
+
+    <button id="button">Help me Michael Scott!</button>
+
+    <h1 id="quote">Ask Michael help by clicking the button above</h1>
+
+    <footer>
+        <p>For the fans, by the fans.</p>
+        <p>Made with ❤️ by <a href="https://instagram.com/codeveed">codeveed</a></p>
+        <p>Dataset by <a href="http://jackxmorris.com/">author</a></p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='jquery.js') }}"></script>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+
+</html>
